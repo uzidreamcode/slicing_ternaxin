@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 
+import 'package:go_router/go_router.dart';
+
 //
 
 class Homepage extends StatefulWidget {
@@ -150,7 +152,7 @@ class _HomepageState extends State<Homepage> {
                                   IconButton(
                                     icon: Icon(Icons.heart_broken),
                                     onPressed: () {
-                                      // Tambahkan fungsi untuk logout
+                                      GoRouter.of(context).go('/Consult');
                                     },
                                   ),
                                 ],
@@ -201,14 +203,25 @@ class _HomepageState extends State<Homepage> {
                         color: Colors.black)),
               ],
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                Container(
-                  padding: EdgeInsets.all(15),
-                  decoration: BoxDecoration(
-                    //height
 
+            CarouselSlider(
+              options: CarouselOptions(
+                height: 250.0,
+                enlargeCenterPage: true,
+                autoPlayCurve: Curves.fastOutSlowIn,
+                enableInfiniteScroll: true,
+                autoPlayAnimationDuration: Duration(milliseconds: 800),
+                viewportFraction:
+                    0.5, // Mengurangi jarak antar item di carousel
+              ),
+              items: [
+                // Item 1
+                Container(
+                  margin: EdgeInsets.symmetric(
+                      horizontal: 3), // Mengurangi margin antar item
+                  padding:
+                      EdgeInsets.all(8), // Mengurangi padding dalam container
+                  decoration: BoxDecoration(
                     shape: BoxShape.rectangle,
                     color: Colors.green[200],
                     borderRadius: BorderRadius.circular(10),
@@ -216,23 +229,20 @@ class _HomepageState extends State<Homepage> {
                   child: Column(
                     children: [
                       Container(
-                        width: 150, // Sesuaikan dengan ukuran yang diinginkan
-                        height: 130, // Sesuaikan dengan ukuran yang diinginkan
+                        width: 150,
+                        height: 130,
                         child: ClipRRect(
-                          borderRadius: BorderRadius.circular(
-                              10), // Untuk mengatur radius gambar sesuai container
+                          borderRadius: BorderRadius.circular(10),
                           child: Image.network(
                             "https://awsimages.detik.net.id/community/media/visual/2024/06/15/ilustrasi-daging-sapi.jpeg?w=1200",
                             fit: BoxFit.cover,
                           ),
                         ),
                       ),
-                      SizedBox(height: 10),
+                      SizedBox(height: 8),
                       Column(
-                        crossAxisAlignment:
-                            CrossAxisAlignment.start, // Mengatur teks ke kiri
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Padding(padding: EdgeInsets.only(left: 10)),
                           Text("Daging Sapi Fresh 500 gram"),
                           Text("Rp 50.000",
                               style: TextStyle(color: Colors.red)),
@@ -241,11 +251,11 @@ class _HomepageState extends State<Homepage> {
                     ],
                   ),
                 ),
+                // Item 2
                 Container(
-                  padding: EdgeInsets.all(15),
+                  margin: EdgeInsets.symmetric(horizontal: 3),
+                  padding: EdgeInsets.all(8),
                   decoration: BoxDecoration(
-                    //height
-
                     shape: BoxShape.rectangle,
                     color: Colors.green[200],
                     borderRadius: BorderRadius.circular(10),
@@ -253,24 +263,21 @@ class _HomepageState extends State<Homepage> {
                   child: Column(
                     children: [
                       Container(
-                        width: 150, // Sesuaikan dengan ukuran yang diinginkan
-                        height: 130, // Sesuaikan dengan ukuran yang diinginkan
+                        width: 150,
+                        height: 130,
                         child: ClipRRect(
-                          borderRadius: BorderRadius.circular(
-                              10), // Untuk mengatur radius gambar sesuai container
+                          borderRadius: BorderRadius.circular(10),
                           child: Image.network(
-                            "https://awsimages.detik.net.id/community/media/visual/2024/06/15/ilustrasi-daging-sapi.jpeg?w=1200",
+                            "https://res.cloudinary.com/dk0z4ums3/image/upload/v1619498577/attached_image/5-kriteria-daging-yang-aman-untuk-dikonsumsi.jpg",
                             fit: BoxFit.cover,
                           ),
                         ),
                       ),
-                      SizedBox(height: 10),
+                      SizedBox(height: 8),
                       Column(
-                        crossAxisAlignment:
-                            CrossAxisAlignment.start, // Mengatur teks ke kiri
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Padding(padding: EdgeInsets.only(left: 10)),
-                          Text("Daging Sapi Fresh 500 gram"),
+                          Text("Daging Ikan Salmon 500g"),
                           Text("Rp 50.000",
                               style: TextStyle(color: Colors.red)),
                         ],
@@ -280,6 +287,7 @@ class _HomepageState extends State<Homepage> {
                 ),
               ],
             ),
+
             Padding(padding: EdgeInsets.only(top: 20)),
             Row(
               children: [

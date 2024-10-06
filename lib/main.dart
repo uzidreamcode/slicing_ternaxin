@@ -1,3 +1,4 @@
+import 'package:belajar_slicing3_ternaxin/Consult.dart';
 import 'package:belajar_slicing3_ternaxin/Homepage.dart';
 import 'package:belajar_slicing3_ternaxin/Login.dart';
 import 'package:flutter/material.dart';
@@ -20,6 +21,11 @@ class MyApp extends StatelessWidget {
         builder: (context, state) =>
             Homepage(), // Tambahkan kembali builder untuk halaman detail
       ),
+      GoRoute(
+        path: '/Consult',
+        builder: (context, state) =>
+            Consult(), // Tambahkan kembali builder untuk halaman detail
+      ),
     ],
   );
 
@@ -27,6 +33,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp.router(
       routerConfig: _router, // Masukkan routerConfig
+
       title: 'Flutter GoRouter Example',
       theme: ThemeData(
         primarySwatch: Colors.blue,
