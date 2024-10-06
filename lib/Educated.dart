@@ -189,7 +189,7 @@ class _EducatedState extends State<Educated> {
                 Container(
                   padding: EdgeInsets.all(10),
                   alignment: Alignment.centerLeft,
-                  height: 100,
+                  // height: 200,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
                     color: Colors.white,
@@ -202,44 +202,91 @@ class _EducatedState extends State<Educated> {
                       ),
                     ],
                   ),
-                  child: Row(
+                  child: Column(
                     children: [
-                      ClipRRect(
-                        borderRadius: BorderRadius.circular(10),
-                        //icon
-                        child: Image.network(
-                          "https://cdn-icons-png.flaticon.com/512/5064/5064889.png",
-                          width: 100,
-                          height: 100,
-                          fit: BoxFit.cover,
-                        ),
-                      ),
-                      Container(
-                          alignment: Alignment.topRight,
-                          child: Column(
-                            children: [
-                              Text(
-                                "Dasar Peternakan 1",
-                                style: TextStyle(
-                                    fontSize: 20, fontWeight: FontWeight.bold),
-                              ),
-                              Container(
-                                //left align
-                                alignment: Alignment.centerLeft,
-                                padding: EdgeInsets.all(5),
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(10),
-                                  color: Colors.green[600],
-                                ),
-                                child: Text(
-                                  "Selesai",
-                                  style: TextStyle(color: Colors.white),
-                                ),
-                              )
+                      Row(
+                        children: [
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(10),
+                            child: Image.network(
+                              "https://asset.kompas.com/crops/3QcbIRoKn11P2lvzr4Ec5C26CGE=/0x0:0x0/750x500/data/photo/buku/61e6a27535e52.jpg",
+                              width: 100,
+                              height: 100,
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                          Container(
+                              alignment: Alignment.topRight,
+                              child: Column(
+                                children: [
+                                  Text(
+                                    "Dasar Peternakan 1",
+                                    style: TextStyle(
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                  Container(
+                                    //left align
+                                    alignment: Alignment.centerLeft,
+                                    padding: EdgeInsets.all(5),
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(10),
+                                      color: Colors.green[600],
+                                    ),
+                                    child: Text(
+                                      "Selesai",
+                                      style: TextStyle(color: Colors.white),
+                                    ),
+                                  )
 
-                              //badge selesai
-                            ],
-                          )),
+                                  //badge selesai
+                                ],
+                              )),
+                        ],
+                      ),
+                      Divider(
+                        color: Colors.black,
+                      ),
+                      Row(
+                        children: [
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(10),
+                            child: Image.network(
+                              "https://asset.kompas.com/crops/3QcbIRoKn11P2lvzr4Ec5C26CGE=/0x0:0x0/750x500/data/photo/buku/61e6a27535e52.jpg",
+                              width: 100,
+                              height: 100,
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                          Container(
+                              alignment: Alignment.topRight,
+                              child: Column(
+                                children: [
+                                  Text(
+                                    "Dasar Peternakan 2",
+                                    style: TextStyle(
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                  Container(
+                                    //left align
+                                    alignment: Alignment.centerLeft,
+                                    padding: EdgeInsets.all(5),
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(10),
+                                      color: Colors.green[600],
+                                    ),
+                                    child: Text(
+                                      "Selesai",
+                                      style: TextStyle(color: Colors.white),
+                                    ),
+                                  )
+
+                                  //badge selesai
+                                ],
+                              )),
+                        ],
+                      ),
                       Divider(
                         color: Colors.black,
                       ),
