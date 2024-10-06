@@ -33,6 +33,7 @@ dependencies:
   flutter:
     sdk: flutter
   go_router: ^14.3.0
+  percent_indicator: ^4.2.3
 
 dev_dependencies:
   flutter_lints: ^4.0.0
