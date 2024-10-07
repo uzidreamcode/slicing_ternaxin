@@ -62,14 +62,13 @@ class _LoginState extends State<Login> {
           child: Text('Lupa Password?'),
         ),
 
-        //button
         Padding(
           padding: const EdgeInsets.all(8.0),
           child: ElevatedButton(
             onPressed: () {
               GoRouter.of(context).go('/home');
             },
-            child: Text('Login'),
+            child: Text('Login', style: TextStyle(color: Colors.white)),
             style: ElevatedButton.styleFrom(
               backgroundColor: Colors.green[600],
               padding: EdgeInsets.symmetric(horizontal: 50, vertical: 20),
@@ -92,9 +91,7 @@ class _LoginState extends State<Login> {
             SizedBox(
               width: 5,
             ),
-            Text("Daftar",
-                style: TextStyle(
-                    color: Colors.green[600], fontWeight: FontWeight.bold)),
+            Text("Daftar", style: TextStyle(color: Colors.green)),
           ],
         ),
       ],
