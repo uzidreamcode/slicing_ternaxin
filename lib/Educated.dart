@@ -205,11 +205,12 @@ class _EducatedState extends State<Educated> {
                   child: Column(
                     children: [
                       Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           ClipRRect(
                             borderRadius: BorderRadius.circular(10),
                             child: Image.network(
-                              "https://asset.kompas.com/crops/3QcbIRoKn11P2lvzr4Ec5C26CGE=/0x0:0x0/750x500/data/photo/buku/61e6a27535e52.jpg",
+                              "https://i.ytimg.com/vi/1kaT1LnCmiE/maxresdefault.jpg",
                               width: 100,
                               height: 100,
                               fit: BoxFit.cover,
@@ -242,17 +243,24 @@ class _EducatedState extends State<Educated> {
                                   //badge selesai
                                 ],
                               )),
+                          IconButton(
+                            icon: Icon(Icons.arrow_forward_ios),
+                            onPressed: () {
+                              GoRouter.of(context).go('/materi');
+                            },
+                          ),
                         ],
                       ),
                       Divider(
                         color: Colors.black,
                       ),
                       Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           ClipRRect(
                             borderRadius: BorderRadius.circular(10),
                             child: Image.network(
-                              "https://asset.kompas.com/crops/3QcbIRoKn11P2lvzr4Ec5C26CGE=/0x0:0x0/750x500/data/photo/buku/61e6a27535e52.jpg",
+                              "https://i.ytimg.com/vi/w0PW5nh6CxQ/maxresdefault.jpg",
                               width: 100,
                               height: 100,
                               fit: BoxFit.cover,
@@ -285,10 +293,63 @@ class _EducatedState extends State<Educated> {
                                   //badge selesai
                                 ],
                               )),
+                          IconButton(
+                            icon: Icon(Icons.arrow_forward_ios),
+                            onPressed: () {
+                              GoRouter.of(context).go('/Consult');
+                            },
+                          ),
                         ],
                       ),
                       Divider(
                         color: Colors.black,
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(10),
+                            child: Image.network(
+                              "https://www.wowkeren.com/display/images/photo/2022/06/17/00434334.jpg",
+                              width: 100,
+                              height: 100,
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                          Container(
+                              alignment: Alignment.topRight,
+                              child: Column(
+                                children: [
+                                  Text(
+                                    "Dasar Peternakan 3",
+                                    style: TextStyle(
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                  Container(
+                                    //left align
+                                    alignment: Alignment.centerLeft,
+                                    padding: EdgeInsets.all(5),
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(10),
+                                      color: Colors.green[600],
+                                    ),
+                                    child: Text(
+                                      "Selesai",
+                                      style: TextStyle(color: Colors.white),
+                                    ),
+                                  )
+
+                                  //badge selesai
+                                ],
+                              )),
+                          IconButton(
+                            icon: Icon(Icons.arrow_forward_ios),
+                            onPressed: () {
+                              GoRouter.of(context).go('/Consult');
+                            },
+                          ),
+                        ],
                       ),
                     ],
                   ),

@@ -1,5 +1,6 @@
 import 'package:belajar_slicing3_ternaxin/Consult.dart';
 import 'package:belajar_slicing3_ternaxin/Educated.dart';
+import 'package:belajar_slicing3_ternaxin/Educated2.dart';
 import 'package:belajar_slicing3_ternaxin/Homepage.dart';
 import 'package:belajar_slicing3_ternaxin/Login.dart';
 import 'package:flutter/material.dart';
@@ -32,6 +33,7 @@ class MyApp extends StatelessWidget {
         builder: (context, state) =>
             Educated(), // Tambahkan kembali builder untuk halaman detail
       ),
+      GoRoute(path: '/materi', builder: (context, state) => Educated2()),
     ],
   );
 
