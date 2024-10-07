@@ -13,7 +13,7 @@ class _MarketState extends State<Market> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('E-Educate', style: TextStyle(color: Colors.white)),
+        title: Text('E-Market', style: TextStyle(color: Colors.white)),
         backgroundColor: Colors.green[600],
         centerTitle: true,
         leading: IconButton(
@@ -79,7 +79,7 @@ class _MarketState extends State<Market> {
                 children: [
                   Container(
                     width:
-                        145, // Sesuaikan lebar agar 3 item muat dalam satu baris
+                        160, // Sesuaikan lebar agar 3 item muat dalam satu baris
                     height: 220,
                     padding: EdgeInsets.all(10),
                     decoration: BoxDecoration(
@@ -132,7 +132,7 @@ class _MarketState extends State<Market> {
                   ),
                   Container(
                     width:
-                        145, // Sesuaikan lebar agar 3 item muat dalam satu baris
+                        160, // Sesuaikan lebar agar 3 item muat dalam satu baris
                     height: 220,
                     padding: EdgeInsets.all(10),
                     decoration: BoxDecoration(
@@ -185,7 +185,7 @@ class _MarketState extends State<Market> {
                   ),
                   Container(
                     width:
-                        145, // Sesuaikan lebar agar 3 item muat dalam satu baris
+                        160, // Sesuaikan lebar agar 3 item muat dalam satu baris
                     height: 220,
                     padding: EdgeInsets.all(10),
                     decoration: BoxDecoration(
@@ -238,7 +238,7 @@ class _MarketState extends State<Market> {
                   ),
                   Container(
                     width:
-                        145, // Sesuaikan lebar agar 3 item muat dalam satu baris
+                        160, // Sesuaikan lebar agar 3 item muat dalam satu baris
                     height: 220,
                     padding: EdgeInsets.all(10),
                     decoration: BoxDecoration(

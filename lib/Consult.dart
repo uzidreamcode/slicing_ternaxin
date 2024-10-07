@@ -42,7 +42,7 @@ class Consult extends StatelessWidget {
 
               SizedBox(height: 20),
 
-              Text("Daftar Rekomendasi Dokter",
+              Text("Daftar Rekomendasi Dokter Hewan",
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
 
               // Carousel Slider dengan kontainer manual
