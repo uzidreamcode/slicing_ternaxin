@@ -129,7 +129,7 @@ class _HomepageState extends State<Homepage> {
                                     IconButton(
                                       icon: Icon(Icons.trolley),
                                       onPressed: () {
-                                        // Tambahkan fungsi untuk logout
+                                        GoRouter.of(context).go('/market');
                                       },
                                     ),
                                   ],
